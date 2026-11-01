@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Build output and tooling caches
+dist/
+build/
+coverage/
+.vite/
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Logs and local runtime files
+*.log
+logs/
+tmp/
+temp/
+*.pid
+
+# Local databases and generated uploads
+*.db
+*.sqlite
+*.sqlite3
+backend/uploads/
+uploads/
+
+# IDE and operating-system files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Documents and archives that should not be committed accidentally
+*.pdf
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.psd

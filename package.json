@@ -1,0 +1,13 @@
+{
+  "name": "hotelo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n CUSTOMER,BUSINESS -c blue,green \"npm --prefix customer-frontend run dev\" \"npm --prefix business-frontend run dev\"",
+    "dev:customer": "npm --prefix customer-frontend run dev",
+    "dev:business": "npm --prefix business-frontend run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
